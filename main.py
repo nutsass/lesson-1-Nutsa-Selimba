@@ -1,0 +1,11 @@
+name = input("სახელი: ")
+age = input("ასაკი: ")
+city = input("ქალაქი: ")
+hobby = input("ჰობი: ")
+
+print("=" * 30)
+print(f"გამარჯობა, {name}!")
+print(f"ასაკი: {age}")
+print(f"ქალაქი: {city}")
+print(f"ჰობი: {hobby}")
+print("=" * 30)
