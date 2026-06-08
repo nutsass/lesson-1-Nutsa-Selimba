@@ -1,0 +1,18 @@
+import random
+
+number = random.randint(1, 100)
+count = 0
+
+# ციკლი მუშაობს მხოლოდ 5-ჯერ (count < 5)
+while count < 5:
+    guess = int(input("გამოიცანი: "))
+    count += 1
+
+# თუ გამოიცნო, ბეჭდავს "გამარჯვება!"-ს და გაჩერდება
+if guess == number:
+    print(f"გამარჯვება! ცდები: {count}")
+    break
+
+# 3 და 4. თუ 5 ცდა ისე გავიდა, რომ break არ მოხდა, დაიბეჭდება წაგება
+else:
+    print(f"წააგე: პასუხი იყო: {number}"
